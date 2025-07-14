@@ -1,11 +1,10 @@
 import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider'; // krijohet automatikisht nga shadcn/ui
+import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
 
-
 export const metadata: Metadata = {
-  title: 'Elvir Muriqi • Software Developer',
+  title: 'Elvir Muriqi • Software Developer',
   description:
     'Full‑Stack developer specializing in .NET & React. Building modern web experiences.',
 };
@@ -18,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-neutral-950 text-slate-100">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider>
           <Navbar />
           {children}
         </ThemeProvider>

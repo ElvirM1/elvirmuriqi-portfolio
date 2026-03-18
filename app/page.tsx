@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="scroll-smooth bg-white dark:bg-slate-950 overflow-x-hidden">
+    <main className="scroll-smooth bg-white dark:bg-slate-950 w-full">
       <Hero3D />
       <Experience />
       <Education />

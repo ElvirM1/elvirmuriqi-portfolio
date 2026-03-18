@@ -74,12 +74,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="section-shell relative overflow-hidden px-4 pb-14 pt-20 sm:px-6 sm:pt-24 sm:pb-16 md:pb-24 md:pt-32"
+      className="section-shell relative overflow-hidden px-4 pb-14 pt-24 sm:px-6 sm:pt-28 sm:pb-16 md:pb-24 md:pt-36"
     >
       <div className="hero-grid hero-mask absolute inset-0 -z-20 opacity-60" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(740px_500px_at_12%_8%,rgba(59,130,246,0.18),transparent_58%),radial-gradient(780px_520px_at_88%_10%,rgba(14,165,233,0.14),transparent_52%),linear-gradient(180deg,rgba(255,255,255,0.14),transparent)] dark:bg-[radial-gradient(740px_500px_at_12%_8%,rgba(34,211,238,0.12),transparent_58%),radial-gradient(780px_520px_at_88%_10%,rgba(59,130,246,0.16),transparent_54%),linear-gradient(180deg,rgba(15,23,42,0.26),transparent)]" />
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="mx-auto grid max-w-6xl items-center gap-8 sm:gap-10 lg:gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -102,7 +102,7 @@ export default function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="heading-font max-w-3xl text-[2rem] font-semibold leading-[0.96] tracking-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl"
+            className="heading-font max-w-3xl text-[1.75rem] font-semibold leading-[0.96] tracking-tight text-slate-950 dark:text-white xs:text-[2rem] sm:text-5xl lg:text-6xl"
           >
             Software engineer.
             <span className="block bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent dark:from-cyan-300 dark:via-sky-400 dark:to-blue-500">

@@ -50,7 +50,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Navbar />
-          {children}
+          <div className="overflow-x-hidden">{children}</div>
         </ThemeProvider>
       </body>
     </html>

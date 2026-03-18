@@ -73,7 +73,7 @@ export default function Education() {
                 UBT — University for Business and Technology
               </p>
               <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                2023 – 2025 · Pristina, Kosovo
+                2022 – 2025 · Pristina, Kosovo
               </p>
             </motion.div>
           </div>

@@ -120,7 +120,7 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 88px;
   }
 
   body {
@@ -224,11 +224,9 @@
 @keyframes page-enter {
   from {
     opacity: 0;
-    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 

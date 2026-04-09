@@ -99,6 +99,49 @@ const projectsData: Project[] = [
     accentFrom: "from-violet-500",
     accentTo: "to-blue-600",
   },
+  {
+    title: "HFE-Alijaj Website",
+    description:
+      "Professional website for a construction company in Pejë, Kosovo. Specializes in ceramic tile installation, plumbing systems and central heating.",
+    bullets: [
+      "Multi-page layout showcasing ceramic tile, plumbing, and heating services",
+      "Animated sections with Framer Motion and mobile-first Tailwind layout",
+      "Live production site built for a real client in Pejë, Kosovo",
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    accentFrom: "from-orange-500",
+    accentTo: "to-amber-400",
+    liveUrl: "https://hfe-alijaj.com/",
+    githubUrl: "https://github.com/ElvirM1/HFE-Alijaj-Qeramike",
+  },
+  {
+    title: "Kompania Pastrimit Alijaj",
+    description: "Modern professional cleaning company website in Kosovo.",
+    bullets: [
+      "Clean, modern layout presenting professional cleaning services",
+      "Fully responsive mobile-first design built with Tailwind CSS",
+      "Live production site for a cleaning company in Kosovo",
+    ],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    accentFrom: "from-teal-500",
+    accentTo: "to-green-400",
+    liveUrl: "https://www.kompaniapastrimitalijaj.com/",
+    githubUrl: "https://github.com/ElvirM1/alijaj-cleaning",
+  },
+  {
+    title: "NexaCall – Call Center Platform",
+    description:
+      "Official marketing website for NexaCall, a Prishtina-based BPO call center specializing in appointment setting and lead generation.",
+    bullets: [
+      "Marketing landing page for a BPO call center with animated hero sections",
+      "Service and lead-generation pages built with Framer Motion animations",
+      "Fully responsive layout presenting NexaCall's appointment-setting offer",
+    ],
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    accentFrom: "from-fuchsia-600",
+    accentTo: "to-purple-500",
+    githubUrl: "https://github.com/ElvirM1/NexaCall-CallCenterWeb",
+  },
 ];
 
 export default function Projects() {
@@ -287,17 +330,32 @@ export default function Projects() {
                       ))}
                     </div>
 
-                    {liveUrl ? (
-                      <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-sky-700 transition group-hover:text-sky-800 dark:text-cyan-300 dark:group-hover:text-cyan-200">
-                        View live
-                        <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                      </span>
-                    ) : githubUrl ? (
-                      <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-slate-600 transition group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-slate-200">
-                        View code
-                        <SiGithub className="h-4 w-4" />
-                      </span>
-                    ) : null}
+                    <div className="flex items-center gap-3">
+                      {liveUrl && (
+                        <a
+                          href={liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-sky-700 transition hover:text-sky-800 dark:text-cyan-300 dark:hover:text-cyan-200"
+                        >
+                          View live
+                          <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        </a>
+                      )}
+                      {githubUrl && (
+                        <a
+                          href={githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-slate-600 transition hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+                        >
+                          View code
+                          <SiGithub className="h-4 w-4" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               </motion.div>

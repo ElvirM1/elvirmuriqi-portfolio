@@ -134,7 +134,7 @@ export default function Contact() {
 
             <a
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-50/60 hover:text-sky-700 hover:shadow-md active:scale-[0.98] dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-500/40 dark:hover:bg-slate-800/80 dark:hover:text-cyan-300"
-              href="/CV_ElvirMuriqi.pdf"
+              href="/Elvir Muriqi - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

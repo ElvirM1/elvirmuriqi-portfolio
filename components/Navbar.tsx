@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
-import { Code2, Download, Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { id: "home", label: "Home" },
@@ -75,8 +76,14 @@ export default function Navbar() {
           className="flex items-center gap-3 rounded-full border border-slate-200/70 bg-white/70 px-4 py-2 text-left backdrop-blur-md transition hover:border-sky-300 hover:bg-white/90 dark:border-slate-800 dark:bg-slate-900/70 dark:hover:border-cyan-500/50 dark:hover:bg-slate-900"
           aria-label="Scroll to home"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white shadow-lg shadow-sky-500/20">
-            <Code2 className="h-4 w-4" />
+          <span className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full shadow-lg">
+            <Image
+              src="/logo.jpg"
+              alt="EM Logo"
+              width={36}
+              height={36}
+              className="h-full w-full object-cover"
+            />
           </span>
           <span className="hidden sm:block">
             <span className="block heading-font text-sm font-semibold tracking-[0.18em] text-slate-900 dark:text-white">
@@ -107,7 +114,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="/CV_ElvirMuriqi.pdf"
+            href="/Elvir Muriqi - CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden items-center gap-2 rounded-full border border-slate-200/80 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-300 hover:text-sky-700 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:border-cyan-500/40 dark:hover:text-cyan-300 md:inline-flex"
@@ -152,7 +159,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="/CV_ElvirMuriqi.pdf"
+              href="/Elvir Muriqi - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-1 inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 transition hover:border-sky-300 hover:text-sky-700 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-500/40 dark:hover:text-cyan-300"

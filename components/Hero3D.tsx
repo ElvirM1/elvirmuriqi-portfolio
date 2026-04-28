@@ -220,7 +220,7 @@ export default function Hero() {
             </motion.button>
 
             <motion.a
-              href="/CV_ElvirMuriqi.pdf"
+              href="/Elvir Muriqi - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}

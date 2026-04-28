@@ -17,88 +17,54 @@ type Project = {
 };
 
 const projectsData: Project[] = [
+  // 1
   {
-    title: "CommunityHelp Platform",
+    title: "Law Firm Website",
     description:
-      "Full-stack platform connecting people who need help with local volunteers.",
+      "Modern, high-end informational website for a lawyer based in Pejë, Kosovo. Premium UI/UX with a cinematic hero section.",
     bullets: [
-      "Map-based volunteer matching with location-aware queries",
-      "Real-time messaging, user profiles, and a peer-rating system",
-      "FastAPI REST backend with JWT auth, full CRUD, and PostgreSQL",
+      "WhatsApp contact integration — form opens a prefilled message instantly",
+      "SEO optimized with metadata, Open Graph, and Twitter card support",
+      "Fully responsive cinematic hero section with Framer Motion animations",
     ],
-    tech: ["FastAPI", "Next.JS", "PostgreSQL", "JWT"],
-    accentFrom: "from-blue-600",
-    accentTo: "to-cyan-500",
-    liveUrl: "https://www.communityhelp.space",
-    githubUrl: "https://github.com/edonberishaa/community-help",
+    tech: ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion"],
+    accentFrom: "from-rose-700",
+    accentTo: "to-rose-500",
+    liveUrl: "https://muratkrasniqi-avokat.com",
+    githubUrl: "https://github.com/ElvirM1/lawyer",
   },
+  // 2
   {
-    title: "The Wild Oasis Website",
+    title: "Adriatica Real Estate",
     description:
-      "Customer-facing hotel booking site built with Next.js 14 server components.",
+      "Modern real estate web application for browsing, filtering, and managing property listings with a Firebase-backed admin dashboard.",
     bullets: [
-      "Server-side data fetching with React Server Components and Suspense",
-      "OAuth guest authentication via NextAuth.js",
-      "Cabin filtering, date availability, and full reservation management",
+      "Property listings with advanced filtering and pagination",
+      "Admin dashboard protected by Firebase Auth with Firestore database",
+      "Image hosting via Cloudinary and WhatsApp contact integration",
     ],
-    tech: ["Next.js", "React", "Tailwind CSS", "NextAuth"],
-    accentFrom: "from-emerald-500",
-    accentTo: "to-teal-500",
-    githubUrl: "https://github.com/ElvirM1/the-wild-oasis-website-video",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Cloudinary"],
+    accentFrom: "from-amber-500",
+    accentTo: "to-orange-400",
+    liveUrl: "https://adriaticarealestate.com",
+    githubUrl: "https://github.com/ElvirM1/real-estate",
   },
+  // 3
   {
-    title: "Online Guitar Shop",
-    description:
-      "E-commerce SPA with a GraphQL API and Apollo Client state management.",
+    title: "Kompania Pastrimit Alijaj",
+    description: "Modern professional cleaning company website in Kosovo.",
     bullets: [
-      "GraphQL queries and mutations with Apollo Client caching",
-      "Dynamic product catalog with detail pages and cart logic",
-      "Fully responsive layout across mobile and desktop",
+      "Clean, modern layout presenting professional cleaning services",
+      "Fully responsive mobile-first design built with Tailwind CSS",
+      "Live production site for a cleaning company in Kosovo",
     ],
-    tech: ["React", "GraphQL", "Apollo Client"],
-    accentFrom: "from-cyan-600",
-    accentTo: "to-teal-500",
-    githubUrl: "https://github.com/ElvirM1/Online-Guitar-Shop",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    accentFrom: "from-teal-500",
+    accentTo: "to-green-400",
+    liveUrl: "https://www.kompaniapastrimitalijaj.com/",
+    githubUrl: "https://github.com/ElvirM1/alijaj-cleaning",
   },
-  {
-    title: "Restaurant Management System",
-    description:
-      "Backend-focused .NET Core system with relational data design and JWT-secured access.",
-    bullets: [
-      "Full CRUD for customers, reservations, and order records",
-      "JWT-secured login with role-based access control",
-      "MySQL schema designed for relational integrity",
-    ],
-    tech: ["C#", ".NET Core", "MySQL", "JWT"],
-    accentFrom: "from-indigo-600",
-    accentTo: "to-blue-500",
-  },
-  {
-    title: "NotaryPublic Web App",
-    description:
-      "Clean business website for a notary office — multi-page layout, contact form, and mobile-first design.",
-    bullets: [
-      "Structured service and information pages with intuitive navigation",
-      "Contact form with server-side handling via Node.js",
-      "Mobile-first responsive layout built with Tailwind CSS",
-    ],
-    tech: ["Node.js", "Tailwind CSS"],
-    accentFrom: "from-violet-600",
-    accentTo: "to-indigo-500",
-  },
-  {
-    title: "Fitness Tracker",
-    description:
-      "Workout and fitness tracking app with exercise logging and session history.",
-    bullets: [
-      "Custom workout plan builder with an exercise library",
-      "Per-session logging with progress tracking and history views",
-      "REST API backend with a React frontend and SQL Server persistence",
-    ],
-    tech: ["React", ".NET", "SQL Server"],
-    accentFrom: "from-violet-500",
-    accentTo: "to-blue-600",
-  },
+  // 4
   {
     title: "HFE-Alijaj Website",
     description:
@@ -114,20 +80,21 @@ const projectsData: Project[] = [
     liveUrl: "https://hfe-alijaj.com/",
     githubUrl: "https://github.com/ElvirM1/HFE-Alijaj-Qeramike",
   },
+  // 5
   {
-    title: "Kompania Pastrimit Alijaj",
-    description: "Modern professional cleaning company website in Kosovo.",
+    title: "Restaurant Management System",
+    description:
+      "Backend-focused .NET Core system with relational data design and JWT-secured access.",
     bullets: [
-      "Clean, modern layout presenting professional cleaning services",
-      "Fully responsive mobile-first design built with Tailwind CSS",
-      "Live production site for a cleaning company in Kosovo",
+      "Full CRUD for customers, reservations, and order records",
+      "JWT-secured login with role-based access control",
+      "MySQL schema designed for relational integrity",
     ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    accentFrom: "from-teal-500",
-    accentTo: "to-green-400",
-    liveUrl: "https://www.kompaniapastrimitalijaj.com/",
-    githubUrl: "https://github.com/ElvirM1/alijaj-cleaning",
+    tech: ["C#", ".NET Core", "MySQL", "JWT"],
+    accentFrom: "from-indigo-600",
+    accentTo: "to-blue-500",
   },
+  // 6
   {
     title: "NexaCall – Call Center Platform",
     description:
@@ -141,6 +108,80 @@ const projectsData: Project[] = [
     accentFrom: "from-fuchsia-600",
     accentTo: "to-purple-500",
     githubUrl: "https://github.com/ElvirM1/NexaCall-CallCenterWeb",
+  },
+  // 7
+  {
+    title: "CommunityHelp Platform",
+    description:
+      "Full-stack platform connecting people who need help with local volunteers.",
+    bullets: [
+      "Map-based volunteer matching with location-aware queries",
+      "Real-time messaging, user profiles, and a peer-rating system",
+      "FastAPI REST backend with JWT auth, full CRUD, and PostgreSQL",
+    ],
+    tech: ["FastAPI", "Next.JS", "PostgreSQL", "JWT"],
+    accentFrom: "from-blue-600",
+    accentTo: "to-cyan-500",
+    liveUrl: "https://www.communityhelp.space",
+    githubUrl: "https://github.com/edonberishaa/community-help",
+  },
+  // 8
+  {
+    title: "NotaryPublic Web App",
+    description:
+      "Clean business website for a notary office — multi-page layout, contact form, and mobile-first design.",
+    bullets: [
+      "Structured service and information pages with intuitive navigation",
+      "Contact form with server-side handling via Node.js",
+      "Mobile-first responsive layout built with Tailwind CSS",
+    ],
+    tech: ["Node.js", "Tailwind CSS"],
+    accentFrom: "from-violet-600",
+    accentTo: "to-indigo-500",
+  },
+  // 9
+  {
+    title: "Online Guitar Shop",
+    description:
+      "E-commerce SPA with a GraphQL API and Apollo Client state management.",
+    bullets: [
+      "GraphQL queries and mutations with Apollo Client caching",
+      "Dynamic product catalog with detail pages and cart logic",
+      "Fully responsive layout across mobile and desktop",
+    ],
+    tech: ["React", "GraphQL", "Apollo Client"],
+    accentFrom: "from-cyan-600",
+    accentTo: "to-teal-500",
+    githubUrl: "https://github.com/ElvirM1/Online-Guitar-Shop",
+  },
+  // 10
+  {
+    title: "The Wild Oasis Website",
+    description:
+      "Customer-facing hotel booking site built with Next.js 14 server components.",
+    bullets: [
+      "Server-side data fetching with React Server Components and Suspense",
+      "OAuth guest authentication via NextAuth.js",
+      "Cabin filtering, date availability, and full reservation management",
+    ],
+    tech: ["Next.js", "React", "Tailwind CSS", "NextAuth"],
+    accentFrom: "from-emerald-500",
+    accentTo: "to-teal-500",
+    githubUrl: "https://github.com/ElvirM1/the-wild-oasis-website-video",
+  },
+  // 11
+  {
+    title: "Fitness Tracker",
+    description:
+      "Workout and fitness tracking app with exercise logging and session history.",
+    bullets: [
+      "Custom workout plan builder with an exercise library",
+      "Per-session logging with progress tracking and history views",
+      "REST API backend with a React frontend and SQL Server persistence",
+    ],
+    tech: ["React", ".NET", "SQL Server"],
+    accentFrom: "from-violet-500",
+    accentTo: "to-blue-600",
   },
 ];
 
@@ -186,7 +227,7 @@ export default function Projects() {
           </motion.p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {projectsData.map(
             (
               {
@@ -258,7 +299,7 @@ export default function Projects() {
                   className={`h-1.5 w-full bg-gradient-to-r ${accentFrom} ${accentTo}`}
                 />
 
-                <div className="flex flex-col flex-1 p-6">
+                <div className="flex flex-col flex-1 p-4 sm:p-6">
                   <div className="mb-4 flex items-start justify-between gap-4">
                     <div>
                       <h3
@@ -309,7 +350,7 @@ export default function Projects() {
                     ))}
                   </ul>
 
-                  <div className="mt-auto flex items-end justify-between gap-4 pt-2">
+                  <div className="mt-auto flex flex-wrap items-end justify-between gap-3 pt-2">
                     <div className="flex flex-wrap gap-2">
                       {tech.map((t, ti) => (
                         <motion.span

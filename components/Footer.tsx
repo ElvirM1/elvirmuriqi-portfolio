@@ -54,7 +54,7 @@ export default function Footer() {
               </a>
             </div>
             <a
-              href="/CV_ElvirMuriqi.pdf"
+              href="/Elvir Muriqi - CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 font-medium text-slate-700 transition hover:border-sky-300 hover:text-sky-700 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-cyan-500/40 dark:hover:text-cyan-300"

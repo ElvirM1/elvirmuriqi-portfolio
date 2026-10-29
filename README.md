@@ -1,36 +1,42 @@
-# Elvir Muriqi – Software Engineer Portfolio
+# Elvir Muriqi — Developer Portfolio
 
-Modern, fast, and fully responsive personal portfolio built with Next.js 15. Showcases my experience, projects, skills, and certifications as a full-stack software engineer.
+Personal portfolio showcasing my software development experience, selected projects, and technical skills.
 
-**Live Demo:** [elvirmuriqi-portfolio.vercel.app](https://elvirmuriqi-portfolio.vercel.app)
+**Live portfolio:** https://elvirmuriqi-portfolio.vercel.app/
 
-## Features
+## Overview
 
-- Clean, modern UI with 3D hero and smooth animations
-- Fully responsive design (mobile-first)
-- Dynamic project cards with live & GitHub links
-- Fast static generation + optimized performance
-- Dark/light theme support
-- SEO-friendly with proper metadata
+Built as a responsive web application to present my work and make it easy for recruiters and collaborators to explore my projects and get in touch.
 
-## Tech Stack
+## Built With
 
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + custom animations
-- **3D/Effects:** React Three Fiber
-- **Deployment:** Vercel
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- React Three Fiber and Drei
+- Framer Motion
+- Vercel
 
-## Getting Started
+## Highlights
+
+- Responsive layout for desktop and mobile
+- Project showcase with links to live demos and source code
+- Animated interface and interactive 3D elements
+- Dark and light theme support
+- SEO metadata
+
+## Run Locally
 
 ```bash
-# Clone the repo
 git clone https://github.com/ElvirM1/elvirmuriqi-portfolio.git
 cd elvirmuriqi-portfolio
-
-# Install dependencies
 npm install
-
-# Run locally
 npm run dev
 ```
+
+Open http://localhost:3000 to view the application.
+
+## Contact
+
+- **LinkedIn:** https://linkedin.com/in/elvir-muriqi-012773302/
+- **GitHub:** https://github.com/ElvirM1
